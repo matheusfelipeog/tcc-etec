@@ -1,0 +1,91 @@
+/* ----------------------- Tela de Vendas --------------------------- */
+
+/* Posicionando ícone X no centro do angulo Y */
+.icon-multiplicar{
+    transform: translateY(10%);
+}
+
+/* Deixando o thead da tabela fixo ao rolar o scroll */
+/* table {
+    width: 100%;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.lista-de-pedidos tbody {
+    height: 30vh;
+    overflow-y: auto;
+} */
+
+.lista-em-preparo{
+    height: 77vh;
+}
+
+.drop-lista-preparo{
+    height: 40vh;
+    overflow-y: auto;
+}
+
+/* .lista-de-pedidos tbody td, .lista-de-pedidos thead th {
+    width: 19.5%;
+    float: left;
+} */
+
+.lista-em-preparo tbody td, .lista-em-preparo thead th {
+    width: 50%;
+    float: left;
+}
+
+.my-h{
+    height: 92vh;
+}
+
+
+/* Personalizando Dropdown Em Preparo */
+.dropdown-em-preparo{
+    width: 57vw!important;
+}
+
+@media (max-width: 768px){
+    .dropdown-em-preparo{
+        width: 60vw!important;
+    }
+}
+
+@media (max-width: 576px){
+    .dropdown-em-preparo{
+        width: 94vw!important;
+    }
+}
+
+
+/* @media (min-width: 576px){
+    .my-h{
+        height: 85vh;
+    }
+}
+
+@media (min-width: 768px){
+    .my-h-sm{
+        height: 84vh;
+    }
+}
+
+@media (min-width: 992px){
+    .my-h-md{
+        height: 83vh;
+    }
+} */
+
+.del-pedido{
+    font-size: 1.4rem;
+}
+/* ---------------------------------------- Fim Tela de Vendas ------------------------------------- */
+
