@@ -5,7 +5,7 @@ Esse projeto foi desenvolvido pelo meu grupo em 2019, como trabalho de conclusã
 
 ## O que é?
 
-Como regra da instituição, o TCC deve ser um projeto que ataque e resolva uma necessidade de uma pessoa ou empresa. Sendo assim, é necessário encontrar um cliente real, sendo remunerados ou não pelo projeto, para concluir o trabalho.
+Como regra da instituição, o TCC deve ser um projeto que ataque e resolva uma necessidade de uma pessoa ou empresa. Sendo assim, é necessário encontrar um cliente real, sendo remunerados ou não pelo projeto.
 
 Encontramos uma lanchonete regional chamada **Mamãezona** que necessitava encontrar uma solução para gerir o seu negócio de forma virtual, então a empresa aceitou participar de nosso projeto.
 
@@ -23,7 +23,7 @@ Depois de discussões sobre como resolveriamos essas necessidades, fizemos os pr
 - [O primeiro protótipo desenhado](./prototipo/v1/)
 - [O segundo protótipo desenhado](./prototipo/v2/)
 
-Quando decidido por onde seguiriamos, iniciamos o desenvolvimento do projeto. Você também pode conferir o resultado na demonstração a seguir.
+Quando decidido por onde seguiriamos, iniciamos o desenvolvimento do projeto. Você pode conferir o resultado na demonstração a seguir.
 
 
 ## Demonstração
