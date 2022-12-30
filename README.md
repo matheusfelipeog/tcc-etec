@@ -38,7 +38,7 @@ Funcionalidades globais:
 </p>
 
 Funcionalidades do campo **Faça pedido**:
-- Busca dinámica de produtos e duplo clique para evitar seleções erradas;
+- Busca dinâmica de produtos e duplo clique para evitar seleções erradas;
 - Visualize infomações do produto;
 - Defina a quantidade de um produto e o valor do pedido será atualizado dinamicamente.
 
