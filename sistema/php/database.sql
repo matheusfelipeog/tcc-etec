@@ -418,7 +418,7 @@ INSERT INTO `itens_vendidos` (`quantia`, `pedido_id_pedido`, `produto_id_produto
 
 -- Copiando estrutura para procedure mamaezona.pagamento
 DELIMITER //
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pagamento`(
+CREATE PROCEDURE IF NOT EXISTS `pagamento`(
 	IN `ID_cliente_param` INT
 )
 BEGIN
@@ -462,7 +462,7 @@ DELIMITER ;
 
 -- Copiando estrutura para procedure mamaezona.Up_devedores_pagamento
 DELIMITER //
-CREATE DEFINER=`root`@`localhost` PROCEDURE `Up_devedores_pagamento`()
+CREATE PROCEDURE IF NOT EXISTS `Up_devedores_pagamento`()
 BEGIN
 
 
@@ -490,7 +490,7 @@ DELIMITER ;
 
 -- Copiando estrutura para evento mamaezona.Atualizar_devedores_pagamento
 DELIMITER //
-CREATE DEFINER=`root`@`localhost` EVENT `Atualizar_devedores_pagamento` ON SCHEDULE EVERY 10 SECOND STARTS '2019-12-07 12:31:30' ON COMPLETION NOT PRESERVE ENABLE DO BEGIN
+CREATE EVENT IF NOT EXISTS `Atualizar_devedores_pagamento` ON SCHEDULE EVERY 10 SECOND STARTS '2019-12-07 12:31:30' ON COMPLETION NOT PRESERVE ENABLE DO BEGIN
 
 	DECLARE id_cli INT DEFAULT 0;
 	DECLARE fim BOOL DEFAULT FALSE;
@@ -515,7 +515,7 @@ DELIMITER ;
 
 -- Copiando estrutura para evento mamaezona.Up_Cliente_Situacao
 DELIMITER //
-CREATE DEFINER=`root`@`localhost` EVENT `Up_Cliente_Situacao` ON SCHEDULE EVERY 10 SECOND STARTS '2019-12-02 13:53:58' ON COMPLETION PRESERVE ENABLE COMMENT 'Troca a situação do cliente caso devedor' DO BEGIN
+CREATE EVENT IF NOT EXISTS `Up_Cliente_Situacao` ON SCHEDULE EVERY 10 SECOND STARTS '2019-12-02 13:53:58' ON COMPLETION PRESERVE ENABLE COMMENT 'Troca a situação do cliente caso devedor' DO BEGIN
 
 #------------------------------------------------
  UPDATE cliente SET situacao = "Em aberto" 
