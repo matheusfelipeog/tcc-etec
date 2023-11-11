@@ -1,5 +1,5 @@
 <?php
-require_once "..\..\model\produto\produto.class.php";
+require_once "../../model/produto/produto.class.php";
 
 $produto = new Produto();
 

@@ -1,5 +1,5 @@
 <?php
-require_once "..\..\model\produto\produto.class.php";
+require_once "../../model/produto/produto.class.php";
 $produto = new Produto();
 //Pega a operação a ser realizada
 $op = addslashes(trim($_GET['op']));
